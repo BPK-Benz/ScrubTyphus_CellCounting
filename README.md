@@ -21,32 +21,32 @@ We updated an example of image processing technique in Output_Cellprofiler folde
 
 # How to Run Training and Evaluation using mmdetection
 ### Prerequisites
-Before you begin, ensure you have mmdetection installed. If not, you can follow the installation instructions from mmdetection's official repository.
-Pre-trained models can be downloaded from the official mmdetection website before you starting.
-Several files in the mmdetection repository were modified (modified mmdetection) and utilized to evaluate metrics for our project.<br>
+Before you begin, ensure you have mmdetection installed. If not, you can follow the installation instructions from mmdetection's official repository.<br>
+Pre-trained models can be downloaded from the official mmdetection website before you starting.<br>
+Several files in the mmdetection repository were modified (modified_mmdetection) and utilized to evaluate metrics for our project.<br>
 
 ### Image Dataset
-Images of the control gene of the first plate were uploaded in here.
-1. Enhaned_BioImage: Three fluorescence channels (Red for cell, Blue for nucleus, and Green for bacteria) were enhanced image quality.
+Images of the control gene of the first plate were uploaded in here.<br>
+1. Enhaned_BioImage: Three fluorescence channels (Red for cell, Blue for nucleus, and Green for bacteria) were enhanced image quality.<br>
 2. Image_Datasets: Merge enhaned three fluorescence images into an image and it is transfered into objective models<br>
 
 
 ### Training
-Navigate to the card_det_models_configs directory.
+Navigate to the card_det_models_configs directory.<br>
 Use the following command to initiate training:
-python tools/train.py <path_to_config_file>
-Replace <path_to_config_file> with the path to the desired model config file.
+python tools/train.py <path_to_config_file><br>
+Replace <path_to_config_file> with the path to the desired model config file.<br>
 Seeing example commands in 1_Trainmodel.sh.<br>
 
 ### Evaluation: Testing, Confusion matrix, Train_Time
 Use the following command for testing:
-python tools/test.py <path_to_config_file> <path_to_checkpoint> --show-dir<path_to_results> --eval bbox --out <path_to_pkl_file> --eval-option proposal_nums="(200,300,1000)" classwise=True save_path=<path_to_save>
-Seeing example commands in 2_Testmodels.sh.
+python tools/test.py <path_to_config_file> <path_to_checkpoint> --show-dir<path_to_results> --eval bbox --out <path_to_pkl_file> --eval-option proposal_nums="(200,300,1000)" classwise=True save_path=<path_to_save><br>
+Seeing example commands in 2_Testmodels.sh.<br>
 
 
 Use the following command for confusion matrix:
-python tools/analysis_tools/confusion_matrix.py <path_to_config_file>   <path_to_pkl_file> <path_to_save>
-Seeing example command in 3_ConfusionMatrix.sh
+python tools/analysis_tools/confusion_matrix.py <path_to_config_file>   <path_to_pkl_file> <path_to_save><br>
+Seeing example command in 3_ConfusionMatrix.sh<br>
 
 
 Use the following command for train_time:
