@@ -23,12 +23,12 @@ We updated an example of image processing technique in Output_Cellprofiler folde
 ### Prerequisites
 Before you begin, ensure you have mmdetection installed. If not, you can follow the installation instructions from mmdetection's official repository.<br>
 Pre-trained models can be downloaded from the official mmdetection website before you starting.<br>
-Several files in the mmdetection repository were modified (modified_mmdetection) and utilized to evaluate metrics for our project.<br>
+Several files in the mmdetection repository were modified (looking at modified_mmdetection folder) and utilized to evaluate metrics for our project.<br>
 
 ### Image Dataset
 Images of the control gene of the first plate were uploaded in here.<br>
-1. Enhaned_BioImage: Three fluorescence channels (Red for cell, Blue for nucleus, and Green for bacteria) were enhanced image quality.<br>
-2. Image_Datasets: Merge enhaned three fluorescence images into an image and it is transfered into objective models<br>
+1. Enhaned_BioImage folder: Three fluorescence channels (Red for cell, Blue for nucleus, and Green for bacteria) were enhanced image quality.<br>
+2. Image_Datasets folder: Merge enhaned three fluorescence images into an image and it is transfered into objective models<br>
 
 
 ### Training
