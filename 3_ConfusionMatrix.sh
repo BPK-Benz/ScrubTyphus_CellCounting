@@ -1,0 +1,8 @@
+python tools/analysis_tools/confusion_matrixBenz.py work_dirs/New_OCT/FasterRCNN_R101_CellNuc/faster_rcnn_r101_CellNucNo.py work_dirs/New_OCT/FasterRCNN_R101_CellNuc/result.pkl work_dirs/New_OCT/FasterRCNN_R101_CellNuc/
+python tools/analysis_tools/confusion_matrixBenz.py work_dirs/New_OCT/FasterRCNN_R50_CellNuc/faster_rcnn_r50_CellNucNo.py work_dirs/New_OCT/FasterRCNN_R50_CellNuc/result.pkl work_dirs/New_OCT/FasterRCNN_R50_CellNuc/
+python tools/analysis_tools/confusion_matrixBenz.py work_dirs/New_OCT/ATSS_R101_CellNuc/atss_r101_CellNucNo.py work_dirs/New_OCT/ATSS_R101_CellNuc/result.pkl work_dirs/New_OCT/ATSS_R101_CellNuc/
+python tools/analysis_tools/confusion_matrixBenz.py work_dirs/New_OCT/ATSS_R50_CellNuc/atss_r50_CellNucNo.py work_dirs/New_OCT/ATSS_R50_CellNuc/result.pkl work_dirs/New_OCT/ATSS_R50_CellNuc/
+python tools/analysis_tools/confusion_matrixBenz.py work_dirs/New_OCT/MaskRCNN_R101_CellNuc/mask_rcnn_r101_CellNucNo.py work_dirs/New_OCT/MaskRCNN_R101_CellNuc/result.pkl work_dirs/New_OCT/MaskRCNN_R101_CellNuc/
+python tools/analysis_tools/confusion_matrixBenz.py work_dirs/New_OCT/MaskRCNN_R50_CellNuc/mask_rcnn_r50_CellNucNo.py work_dirs/New_OCT/MaskRCNN_R50_CellNuc/result.pkl work_dirs/New_OCT/MaskRCNN_R50_CellNuc/
+python tools/analysis_tools/confusion_matrixBenz.py work_dirs/New_OCT/YoloV3_DarkNet_CellNuc/yolov3_d53_416_CellNucNo.py work_dirs/New_OCT/YoloV3_DarkNet_CellNuc/result.pkl work_dirs/New_OCT/YoloV3_DarkNet_CellNuc/
+python tools/analysis_tools/confusion_matrixBenz.py work_dirs/New_OCT/YoloV3_Mobilenet_CellNuc/yolov3_mobilenetv2_CellNucNo.py work_dirs/New_OCT/YoloV3_Mobilenet_CellNuc/result.pkl work_dirs/New_OCT/YoloV3_Mobilenet_CellNuc/
