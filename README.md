@@ -4,7 +4,8 @@
 Explore deep learning techniques to improve the speed and accuracy of scrub typhus cell counting by adjusting backbone size and transitioning from instance segmentation to object detection.
 
 ### Deep learning models 
-The proposed deep learning models were created using MMDetection, a software library that offers a diverse range of deep learning models. You can access it at https://github.com/open-mmlab/mmdetection/projects. Four intriguing models were utilized in this project: Mask R-CNN for instance segmentation, and Faster R-CNN, Adaptive Training Sample Selection (ATSS), and You Only Look Once version 3 (YOLOv3) for object detection.
+- The proposed deep learning models were created using MMDetection, a software library that offers a diverse range of deep learning models. You can access it at https://github.com/open-mmlab/mmdetection/projects.
+- Four intriguing models were utilized in this project: Mask R-CNN for instance segmentation, and Faster R-CNN, Adaptive Training Sample Selection (ATSS), and You Only Look Once version 3 (YOLOv3) for object detection.
 
 ### Image processing technique
 CellProfiler is a notable tool for processing biological images, with an example illustrating its application in cell counting in the 'Output_Cellprofiler' directory.
