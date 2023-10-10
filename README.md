@@ -8,7 +8,7 @@ Explore deep learning techniques to improve the speed and accuracy of scrub typh
 - Four intriguing models were utilized in this project: Mask R-CNN for instance segmentation, and Faster R-CNN, Adaptive Training Sample Selection (ATSS), and You Only Look Once version 3 (YOLOv3) for object detection.
 
 ### Image processing technique
-CellProfiler is a notable tool for processing biological images, with an example illustrating its application in cell counting in the 'Output_Cellprofiler' directory.
+CellProfiler is a notable tool for processing biological images, with an example illustrating its application in cell counting in the "Output_Cellprofiler" directory.
 
 
 # Image Dataset
@@ -17,7 +17,7 @@ Scrub typhus, caused by the bacterium Orientia tsutsugamushi, is transmitted by 
 
 ### Image character
 All organelles were fluorescently stained, with red for cell boundaries, blue for nucleus boundaries, and green for bacteria boundaries, and then captured using high-content screening.
-The dataset includes numerous images containing both control genes and knockdown genes. It's worth noting that only the images with enhanced quality for the first control gene have been uploaded in Enhanced_BioImage directory. In contrast, the Image_Datasets directory has combined three fluorescence images into a single image for streamlined integration into deep learning models.
+The dataset includes numerous images containing both control genes and knockdown genes. It's worth noting that only the images with enhanced quality for the first control gene have been uploaded in "Enhanced_BioImage" directory. In contrast, the "Image_Datasets" directory has combined three fluorescence images into a single image for streamlined integration into deep learning models.
 
 ### Data annotation
 In-house software for data annotation has been generated and is available at https://github.com/Chuenchat/cellLabel
@@ -31,17 +31,17 @@ In-house software for data annotation has been generated and is available at htt
 
 
 ### Training
-Navigate to the CellCounting_models directory.<br>
+Navigate to the "CellCounting_models" directory.<br>
 - Use the following command to initiate training:
 python tools/train.py <path_to_config_file><br>
-Replace <path_to_config_file> with the path to the desired model config file. Seeing example commands in 1_Trainmodel.sh.<br>
+Replace <path_to_config_file> with the path to the desired model config file. Seeing example commands in **1_Trainmodel.sh**.<br>
 
 ### Evaluation: Testing, Confusion matrix, Train_Time
 - Use the following command for testing:
-python tools/test.py <path_to_config_file> <path_to_checkpoint> --show-dir<path_to_results> --eval bbox --out <path_to_pkl_file> --eval-option proposal_nums="(200,300,1000)" classwise=True save_path=<path_to_save> Seeing example commands in 2_Testmodels.sh.<br>
+python tools/test.py <path_to_config_file> <path_to_checkpoint> --show-dir<path_to_results> --eval bbox --out <path_to_pkl_file> --eval-option proposal_nums="(200,300,1000)" classwise=True save_path=<path_to_save> Seeing example commands in **2_Testmodels.sh**.<br>
 
 
-- Use the following command for confusion matrix: python tools/analysis_tools/confusion_matrix.py <path_to_config_file>   <path_to_pkl_file> <path_to_save> Seeing example command in 3_ConfusionMatrix.sh<br>
+- Use the following command for confusion matrix: python tools/analysis_tools/confusion_matrix.py <path_to_config_file>   <path_to_pkl_file> <path_to_save> Seeing example command in **3_ConfusionMatrix.sh**.<br>
 
 
 - Use the following command for train_time:
