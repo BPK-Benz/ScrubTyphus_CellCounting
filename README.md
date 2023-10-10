@@ -24,29 +24,25 @@ In-house software for data annotation has been generated and is available at htt
 
 # How to Run Training and Evaluation using mmdetection
 ### Prerequisites
-Before you begin, ensure you have mmdetection installed. If not, you can follow the installation instructions from mmdetection's official repository.<br>
-Pre-trained models can be downloaded from the official mmdetection website before you starting.<br>
-Several files in the mmdetection repository were modified (looking at modified_mmdetection folder) and utilized to evaluate metrics for our project.<br>
+- Before you begin, ensure you have mmdetection installed. If not, you can follow the installation instructions from mmdetection's official repository.<br>
+- Pre-trained models can be downloaded from the official mmdetection website before you starting.<br>
+- Several files in the mmdetection repository were modified (looking at modified_mmdetection folder) and utilized to evaluate metrics for our project.<br>
 
 
 ### Training
 Navigate to the CellCounting_models directory.<br>
 - Use the following command to initiate training:
 python tools/train.py <path_to_config_file><br>
-Replace <path_to_config_file> with the path to the desired model config file.<br>
-- Seeing example commands in 1_Trainmodel.sh.<br>
+Replace <path_to_config_file> with the path to the desired model config file. Seeing example commands in 1_Trainmodel.sh.<br>
 
 ### Evaluation: Testing, Confusion matrix, Train_Time
 - Use the following command for testing:
-python tools/test.py <path_to_config_file> <path_to_checkpoint> --show-dir<path_to_results> --eval bbox --out <path_to_pkl_file> --eval-option proposal_nums="(200,300,1000)" classwise=True save_path=<path_to_save><br> Seeing example commands in 2_Testmodels.sh.<br>
+python tools/test.py <path_to_config_file> <path_to_checkpoint> --show-dir<path_to_results> --eval bbox --out <path_to_pkl_file> --eval-option proposal_nums="(200,300,1000)" classwise=True save_path=<path_to_save> Seeing example commands in 2_Testmodels.sh.<br>
 
 
-- Use the following command for confusion matrix:
-python tools/analysis_tools/confusion_matrix.py <path_to_config_file>   <path_to_pkl_file> <path_to_save><br>
-- Seeing example command in 3_ConfusionMatrix.sh<br>
+- Use the following command for confusion matrix: python tools/analysis_tools/confusion_matrix.py <path_to_config_file>   <path_to_pkl_file> <path_to_save> Seeing example command in 3_ConfusionMatrix.sh<br>
 
 
 - Use the following command for train_time:
-python tools/analysis_tools/analyze_logs.py cal_train_time log.json
-- Seeing example command in 4_CalTrainTime.sh. 
+python tools/analysis_tools/analyze_logs.py cal_train_time log.json Seeing example command in 4_CalTrainTime.sh. 
 
