@@ -38,8 +38,7 @@ Replace <path_to_config_file> with the path to the desired model config file.<br
 
 ### Evaluation: Testing, Confusion matrix, Train_Time
 - Use the following command for testing:
-python tools/test.py <path_to_config_file> <path_to_checkpoint> --show-dir<path_to_results> --eval bbox --out <path_to_pkl_file> --eval-option proposal_nums="(200,300,1000)" classwise=True save_path=<path_to_save><br>
-- Seeing example commands in 2_Testmodels.sh.<br>
+python tools/test.py <path_to_config_file> <path_to_checkpoint> --show-dir<path_to_results> --eval bbox --out <path_to_pkl_file> --eval-option proposal_nums="(200,300,1000)" classwise=True save_path=<path_to_save><br> Seeing example commands in 2_Testmodels.sh.<br>
 
 
 - Use the following command for confusion matrix:
