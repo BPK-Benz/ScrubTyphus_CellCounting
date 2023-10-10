@@ -1,6 +1,6 @@
 # Scrub Typhus Cell Counting techniques
 
-## Objective of this project
+### Objective 
 Explore deep learning techniques to improve the speed and accuracy of scrub typhus cell counting by adjusting backbone size and transitioning from instance segmentation to object detection.
 
 ### Deep learning models 
@@ -11,14 +11,14 @@ CellProfiler is a notable tool for processing biological images, with an example
 
 
 # Image Dataset
-## What is Scrub Typhus?
+### What is Scrub Typhus?
 Scrub typhus, caused by the bacterium Orientia tsutsugamushi, is transmitted by infected mites in vegetation-rich areas of Asia, the Pacific Islands, and the Middle East. Symptoms include fever, headache, rash, and swollen lymph nodes. Diagnosis relies on clinical and lab tests, with early antibiotic treatment being vital. No vaccine is widely available, so preventive measures, like protective clothing and insect repellent use, are key. Efforts continue to raise awareness and improve diagnostics and treatment in endemic regions. Timely medical attention is critical for recovery.
 
-## Image character
+### Image character
 All organelles were fluorescently stained, with red for cell boundaries, blue for nucleus boundaries, and green for bacteria boundaries, and then captured using high-content screening.
 The dataset includes numerous images containing both control genes and knockdown genes. It's worth noting that only the images with enhanced quality for the first control gene have been uploaded in Enhanced_BioImage directory. In contrast, the Image_Datasets directory has combined three fluorescence images into a single image for streamlined integration into deep learning models.
 
-## Data annotation
+### Data annotation
 In-house software for data annotation has been generated and is available at https://github.com/Chuenchat/cellLabel
 
 
