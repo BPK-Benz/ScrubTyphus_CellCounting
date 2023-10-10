@@ -28,14 +28,9 @@ Before you begin, ensure you have mmdetection installed. If not, you can follow 
 Pre-trained models can be downloaded from the official mmdetection website before you starting.<br>
 Several files in the mmdetection repository were modified (looking at modified_mmdetection folder) and utilized to evaluate metrics for our project.<br>
 
-### Image Dataset
-Images of the control gene of the first plate were uploaded in here.<br>
-1. Enhaned_BioImage folder: Three fluorescence channels (Red for cell, Blue for nucleus, and Green for bacteria) were enhanced image quality.<br>
-2. Image_Datasets folder: Merge enhaned three fluorescence images into an image and it is transfered into objective models<br>
-
 
 ### Training
-Navigate to the card_det_models_configs directory.<br>
+Navigate to the CellCounting_models directory.<br>
 Use the following command to initiate training:
 python tools/train.py <path_to_config_file><br>
 Replace <path_to_config_file> with the path to the desired model config file.<br>
