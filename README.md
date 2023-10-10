@@ -1,22 +1,25 @@
-## Object Detection and Data annotation for Scrub Typhus Cell Counting
+# Scrub Typhus Cell Counting techniques
 
+## Objective of this project
+Explore deep learning techniques to improve the speed and accuracy of scrub typhus cell counting by adjusting backbone size and transitioning from instance segmentation to object detection.
 
-### Object Detection part
-
-In a case study focused on high-content RNAi screening for Orientia tsutsugamushi bacterium infection, we utilized MMDetection, a software library with a wide variety of object detection models and can be found in https://github.com/open-mmlab/mmdetection/projects), to perform cell counting. 
-
-Two-stage detectors like Faster RCNN, Mask RCNN, and Cascade Mask RCNN are known for their accuracy but they are slower in terms of inference speed. Therefore, we proposes an alternative approach that involves decreasing backbone size with the two-stage detectors, and also exploring the use of newer one-stage detectors such as Adaptive Training Sample Selection (ATSS) and You Only Look Once version 3 (YoloV3).
-
-By using these different approaches, we were able to create ten different models for cell counting. This suggests that there are multiple ways to approach the problem of cell counting using object detection models, and different models may be suitable for different applications depending on the specific requirements for accuracy and inference speed.<p style="margin-bottom: 40px;"></p><br>
-
-
-### Data annotation
-We developed in-house software for data annotation part that can be found in https://github.com/Chuenchat/cellLabel.
-<p style="margin-bottom: 40px;"></p><br>
-
+### Deep learning models 
+The proposed deep learning models were created using MMDetection, a software library that offers a diverse range of deep learning models. You can access it at https://github.com/open-mmlab/mmdetection/projects. Four intriguing models were utilized in this project: Mask R-CNN for instance segmentation, and Faster R-CNN, Adaptive Training Sample Selection (ATSS), and You Only Look Once version 3 (YOLOv3) for object detection.
 
 ### Image processing technique
-We updated an example of image processing technique in Output_Cellprofiler folder.<br><br>
+CellProfiler is a notable tool for processing biological images, with an example illustrating its application in cell counting in the 'Output_Cellprofiler' directory.
+
+
+# Image Dataset
+## What is Scrub Typhus?
+Scrub typhus, caused by the bacterium Orientia tsutsugamushi, is transmitted by infected mites in vegetation-rich areas of Asia, the Pacific Islands, and the Middle East. Symptoms include fever, headache, rash, and swollen lymph nodes. Diagnosis relies on clinical and lab tests, with early antibiotic treatment being vital. No vaccine is widely available, so preventive measures, like protective clothing and insect repellent use, are key. Efforts continue to raise awareness and improve diagnostics and treatment in endemic regions. Timely medical attention is critical for recovery.
+
+## Image character
+All organelles were fluorescently stained, with red for cell boundaries, blue for nucleus boundaries, and green for bacteria boundaries, and then captured using high-content screening.
+The dataset includes numerous images containing both control genes and knockdown genes. It's worth noting that only the images with enhanced quality for the first control gene have been uploaded in Enhanced_BioImage directory. In contrast, the Image_Datasets directory has combined three fluorescence images into a single image for streamlined integration into deep learning models.
+
+## Data annotation
+In-house software for data annotation has been generated and is available at https://github.com/Chuenchat/cellLabel
 
 
 # How to Run Training and Evaluation using mmdetection
