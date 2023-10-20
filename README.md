@@ -36,7 +36,7 @@ Navigate to the "CellCounting_models" directory.<br>
 python tools/train.py <path_to_config_file><br>
 Replace <path_to_config_file> with the path to the desired model config file. Seeing example commands in **1_Trainmodel.sh**.<br>
 
-### Evaluation: Testing, Confusion matrix, Train_Time
+### Evaluation: Testing, Confusion matrix, Train_Time, inference_time
 - Use the following command for testing:
 python tools/test.py <path_to_config_file> <path_to_checkpoint> --show-dir<path_to_results> --eval bbox --out <path_to_pkl_file> --eval-option proposal_nums="(200,300,1000)" classwise=True save_path=<path_to_save> Seeing example commands in **2_Testmodels.sh**.<br>
 
@@ -45,5 +45,8 @@ python tools/test.py <path_to_config_file> <path_to_checkpoint> --show-dir<path_
 
 
 - Use the following command for train_time:
-python tools/analysis_tools/analyze_logs.py cal_train_time log.json Seeing example command in 4_CalTrainTime.sh. 
+python tools/analysis_tools/analyze_logs.py cal_train_time log.json Seeing example command in 4_CalTrainTime.sh.
+
+- Use the following command for inference_time
+python -m torch.distributed.launch --nproc_per_node=1 --master_port=29500 tools/analysis_tools/benchmark.py <path_to_config_file> <path_to_checkpoint> --launcher pytorch --save_path <path_to_save>
 
